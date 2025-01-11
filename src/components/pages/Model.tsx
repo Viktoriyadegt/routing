@@ -16,7 +16,6 @@ const modelKey:modelType = {
 
 export const Model = () => {
 
-    //todo: comments
     const {id, name} = useParams()
 
 
