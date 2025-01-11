@@ -13,18 +13,18 @@
 .nav{
    background-color: white;
     min-height: 400px;
-    width: 30%;
+    width: 20%;
     color:#282c34;
     font-size: 30px;
-
 }
 
 .content{
     background-color:#282c34;
     min-height: 400px;
-    width: 70%;
+    width: 80%;
     color: white;
     font-size: 30px;
+    text-align: center;
 }
 
 .footer {
@@ -43,4 +43,30 @@
 .isActive{
     color: rgba(121, 232, 122, 0.86);
     text-decoration: underline;
+}
+
+.boxImg {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.img {
+    width: 320px;
+    height: 320px;
+    margin-bottom: 120px;
+    margin-top: 20px;
+}
+
+.model {
+    text-align: center;
+}
+
+.model .h2{
+    color: #59f159;
+}
+
+.model .img {
+    width: 400px;
+    height: 400px;
 }

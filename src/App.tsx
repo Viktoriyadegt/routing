@@ -1,17 +1,19 @@
 import React from 'react';
 import styles from "./components/Site.module.css";
-import {PageOne} from "./components/pages/PageOne";
-import {PageTwo} from "./components/pages/PageTwo";
-import {PageThree} from "./components/pages/PageThree";
+import {Adidas} from "./components/pages/Adidas";
+import {Puma} from "./components/pages/Puma";
+import {Abibas} from "./components/pages/Abibas";
 import {Navigate, NavLink, Route, Routes} from 'react-router-dom';
 import {Error404} from "./components/pages/Error404";
 import {s} from './components/pages/navlinkStyles'
+import {Model} from "./components/pages/Model";
 
-const PATH = {
-    PAGE1: "/page1",
-    PAGE2: "/page2",
-    PAGE3: "/page3",
-    ERROR: "/page/error"
+export const PATH = {
+    PAGE1: "/adidas",
+    PAGE2: "/puma",
+    PAGE3: "/abibas",
+    ERROR: "/page/error",
+    MODEL: "/:name/:id",
 } as const
 
 
@@ -21,18 +23,20 @@ function App() {
             <div className={styles.header}><h1>HEADER</h1></div>
             <div className={styles.body}>
                 <div className={styles.nav}>
-                    <div><s.NavWrapper><NavLink to={PATH.PAGE1}>Page1</NavLink></s.NavWrapper></div>
-                    <div><s.NavWrapper><NavLink to={PATH.PAGE2}>Page2</NavLink></s.NavWrapper></div>
-                    <div><s.NavWrapper><NavLink to={PATH.PAGE3}>Page3</NavLink></s.NavWrapper></div>
+                    <div><s.NavWrapper><NavLink to={PATH.PAGE1}>ADIDAS</NavLink></s.NavWrapper></div>
+                    <div><s.NavWrapper><NavLink to={PATH.PAGE2}>PUMA</NavLink></s.NavWrapper></div>
+                    <div><s.NavWrapper><NavLink to={PATH.PAGE3}>ABIBAS</NavLink></s.NavWrapper></div>
                 </div>
                 <div className={styles.content}>
 
                     <Routes>
-                        <Route path="/" element={<Navigate to={"/page1"}/>}/>
+                        <Route path="/" element={<Navigate to={"/adidas"}/>}/>
 
-                        <Route path={PATH.PAGE1} Component={PageOne}/>
-                        <Route path={PATH.PAGE2} Component={PageTwo}/>
-                        <Route path={PATH.PAGE3} Component={PageThree}/>
+                        <Route path={PATH.PAGE1} Component={Adidas}/>
+                        <Route path={PATH.PAGE2} Component={Puma}/>
+                        <Route path={PATH.PAGE3} Component={Abibas}/>
+                        <Route path={PATH.MODEL} Component={Model}/>
+
 
                         <Route path="/*" Component={Error404}/>
                     </Routes>
