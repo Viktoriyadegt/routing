@@ -1,15 +1,11 @@
 import * as React from "react";
-import {
-    createBrowserRouter,
-} from "react-router-dom";
+import {createBrowserRouter,} from "react-router-dom";
 import App from "../../App";
 import {Abibas} from "../pages/Abibas";
 import {Puma} from "../pages/Puma";
 import {Prices} from "../pages/Prices";
 import {Adidas} from "../pages/Adidas";
-import {Crosses} from "../Crosses";
 import {Error404} from "../pages/Error404";
-import {METHODS} from "node:http";
 import {Model} from "../pages/Model";
 
 export const PATH = {
