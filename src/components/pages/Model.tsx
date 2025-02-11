@@ -3,6 +3,7 @@ import {adidas, ItemType} from "./Adidas";
 import {useParams} from "react-router-dom";
 import st from './../Site.module.css'
 import {puma} from "./Puma";
+import {abibas} from "./Abibas";
 
 type modelType = {
     [key: string]: ItemType[];
@@ -10,7 +11,8 @@ type modelType = {
 
 const modelKey:modelType = {
     adidas: adidas,
-    puma: puma
+    puma: puma,
+    abibas: abibas
 }
 
 
