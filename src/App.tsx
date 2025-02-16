@@ -7,9 +7,9 @@ export const PATH = {
     ADIDAS: "/adidas",
     PUMA: "/puma",
     ABIBAS: "/abibas",
-    ERROR: "/page/error",
     MODEL: "/:name/:id",
     PRICES: "/prices",
+    PROTECTEDPAGE:"/protected"
 } as const
 
 
@@ -23,6 +23,7 @@ function App() {
                     <div><s.NavWrapper><NavLink to={PATH.PUMA}>PUMA</NavLink></s.NavWrapper></div>
                     <div><s.NavWrapper><NavLink to={PATH.ABIBAS}>ABIBAS</NavLink></s.NavWrapper></div>
                     <div><s.NavWrapper><NavLink to={PATH.PRICES}>PRICES</NavLink></s.NavWrapper></div>
+                    <div><s.NavWrapper><NavLink to={PATH.PROTECTEDPAGE}>PROTECTED PAGE</NavLink></s.NavWrapper></div>
                 </div>
                 <div className={styles.content}>
 
