@@ -32,6 +32,10 @@ export const PrivateRoute = () => {
 
 const publicRoutes: RouteObject[] = [
     {
+        path: '/',
+        element: <Navigate to={PATH.ADIDAS}/>,
+    },
+    {
         path: PATH.ADIDAS,
         element: <Adidas/>,
     },

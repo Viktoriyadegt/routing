@@ -1,7 +1,6 @@
 import React from 'react';
 import abibasModel1 from "../../assets/abibas/800_5c603368cd9df.webp";
-import abibasModel2
-    from "../../assets/abibas/c67f3_512.webp";
+import abibasModel2 from "../../assets/abibas/c67f3_512.webp";
 import abibasModel3 from "../../assets/abibas/DSC00265.webp";
 import st from "../Site.module.css";
 import {s} from "./navlinkStyles";
